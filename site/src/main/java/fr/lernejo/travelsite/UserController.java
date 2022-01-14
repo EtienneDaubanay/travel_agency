@@ -39,7 +39,12 @@ public class UserController {
 
     @GetMapping("/api/travels")
     public String DestinationList (@RequestParam String userName) throws IOException {
-        JsonNode destination = clientService.getDestination(userService.userByName(userName));
-        return destination.toString();
+        System.out.println("Name"+userName);
+        if(userName == null || userName.equals("")){
+            return null;
+        }else {
+            JsonNode destination = clientService.getDestination(userService.userByName(userName));
+            return destination.toString();
+        }
     }
  }
