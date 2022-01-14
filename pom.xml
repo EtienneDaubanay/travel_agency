@@ -60,6 +60,11 @@
                 <version>${spring-boot.version}</version>
                 <scope>test</scope>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/org.json/json -->
+            <dependency>
+                <groupId>org.json</groupId>
+                <artifactId>json</artifactId>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

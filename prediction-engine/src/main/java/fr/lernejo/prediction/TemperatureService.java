@@ -49,6 +49,7 @@ public class TemperatureService {
         }
     }
 
+
     record CaseInsensitiveString(String value) {
         @Override
         public int hashCode() {
