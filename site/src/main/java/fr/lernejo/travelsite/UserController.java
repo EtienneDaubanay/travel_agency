@@ -39,7 +39,6 @@ public class UserController {
 
     @GetMapping("/api/travels")
     public String DestinationList (@RequestParam String userName) throws IOException {
-        System.out.println("Name"+userName);
         if(userName == null || userName.equals("")){
             return null;
         }else {
